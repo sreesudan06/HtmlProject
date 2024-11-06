@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Pet Adoption Website</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+
+header {
+background: #28a745;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+.hero {
+background-image: url('hero-image.jpg'
+height: 300px;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+font-size: 2.5em;
+}
+
+.pet-listing {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 20px;
+}
+
+.pet-card {
+flex: 1 1 calc(30% - 20px);
+margin: 10px;
+border: 1px solid #ccc;
+border-radius: 8px;
+padding: 15px;
+background: #fff;
+transition: transform 0.2s;
+}
+
+.pet-card:hover {
+transform: scale(1.05);
+}
+
+footer {
+background: #28a745;
+color: white;
+text-align: center;
+padding: 15px;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+max-width: 400px;
+margin: 20px auto;
+background: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 100%;
+}
+
+button {
+background-color: #28a745;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #218838;
+}
+
+@media (max-width: 768px) {
+.pet-card {
+flex: 1 1 calc(100% - 20px);
+}
+
+.hero h1 {
+font-size: 2em;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Pet Adoption Center</h1>
+</header>
+
+<div class="hero">
+<h1>Adopt a Pet, Change a Life!</h1>
+</div>
+
+<section class="pet-listing">
+<div class="pet-card">
+<img src="https://i.pinimg.com/originals/bd/6a/f1/bd6af1767845abfddd7662e534f3ebd2.jpg" alt="Pet 1" style="width:100%; border-radius: 8px;">
+<h2>Buddy</h2>
+<p>Age: 2 years</p>
+<p>Breed: Golden Retriever</p>
+<p>Friendly and energetic, Buddy loves to play!</p>
+</div>
+<div class="pet-card">
+<img src="https://cdn.fotofits.com/petzlover/gallery/img/l/traditional-siamese-892177.jpg" alt="Pet 2" style="width:100%; border-radius: 8px;">
+<h2>Luna</h2>
+<p>Age: 1 year</p>
+<p>Breed: Siamese Cat</p>
+<p>Curious and playful, Luna enjoys exploring!</p>
+</div>
+<div class="pet-card">
+<img src="https://superiorrottweilersoh.com/wp-content/uploads/2023/03/Rocky-1-1-1024x807.jpg" alt="Pet 3" style="width:100%; border-radius: 8px;">
+<h2>Charlie</h2>
+<p>Age: 3 years</p>
+<p>Breed: Rottweiler</p>
+<p>Loyal and protective, Rocky is a great companion!</p>
+</div>
+</section>
+
+<section>
+<h2>Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name" required><br>
+<input type="email" placeholder="Your Email" required><br>
+<textarea placeholder="Your Message" rows="4" required></textarea><br>
+<button type="submit">Send Message</button>
+</form>
+</section>
+
+<footer>
+<p>&copy; 2024 Pet Adoption Center</p>
+</footer>
+</body>
+</html>
